@@ -20,7 +20,7 @@ const Search = ({properties}) => {
                     fontSize="lg" justifyContent="center" alignItems="center"
                     onClick={()=> setSearchFilters((prevFilters)=> !prevFilters)}>
                 <Text> Search Property By Filters</Text>
-                <Icon paddingLeft="2" w="7" as={BsFilter}/>
+                <Icon paddingleft="2" w="7" as={BsFilter}/>
             </Flex>
             {searchFilters && <SearchFilters/>}
             <Text fontSize="2xl" p="4" fontWeight="bold">
