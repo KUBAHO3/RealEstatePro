@@ -28,7 +28,7 @@ const PropertyDetails = ({ PropertyDetails:{ price, rentFrequency, rooms, title,
             <Text fontSize="lg" marginBottom="2" fontWeight="bold">
                 {title}
             </Text>
-            <Text lineHeight="2" color="gray.600">
+            <Text lineHeight="2" >
                 {description}
             </Text>
         </Box>
