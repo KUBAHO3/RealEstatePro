@@ -9,12 +9,12 @@ const Navbar = () =>{
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-    <Flex p="2" borderBottom="1px" borderColor="gray.100" position="sticky">
-        <Box fontSize="3xl" color="blue.400" fontWeight="bold">
+    <Flex p="2" borderBottom="1px" borderColor="gray.100" pos="relative" position="static">
+        <Box fontSize="3xl" color="blue.400" fontWeight="bold" paddingLeft="5">
             <Link href="/" paddingleft="2">Heaven</Link>
         </Box>
         <Spacer/>
-        <Box>
+        <Box paddingRight="5">
             
             <Menu>
                <MenuButton as={IconButton} icon={<FcMenu/>} variant="outlined" color="red.600"/> 
@@ -59,7 +59,9 @@ const Navbar = () =>{
                 </Center>
                 <br />
                 <MenuDivider />
-                <MenuItem>Your Servers</MenuItem>
+                <Link href="/dashboard" passHref>
+                    <MenuItem >Your Servers</MenuItem>
+                </Link>
                 <MenuItem>Account Settings</MenuItem>
                 <MenuItem>Logout</MenuItem>
               </MenuList>

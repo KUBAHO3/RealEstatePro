@@ -14,7 +14,7 @@ const Search = ({properties}) => {
     const router = useRouter();
 
     return(
-        <Box>
+        <Box maxWidth="1280px" m="auto" >
             <Flex cursor="pointer" bg="gray.100" borderBottom="1px" 
                     borderColor="gray.200" p="2" fontWeight="black"
                     fontSize="lg" justifyContent="center" alignItems="center"

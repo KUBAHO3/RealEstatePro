@@ -11,11 +11,12 @@ const Layout = ({ children }) =>(
         <Head>
             <title>Real Estate</title>
         </Head>
-        <Box maxWidth="1280px" m="auto">
-            <header>
+        <Box  m="auto">
+            <header >
                 <Navbar/>
             </header>
             <main>
+                
                 {children}
             </main>
             <footer>

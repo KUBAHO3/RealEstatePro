@@ -22,7 +22,7 @@ export default function Home({propertiesForSale, propertiesForRent}) {
   //console.log(propertiesForSale, propertiesForRent);
   return (
     <>
-      <Box>
+      <Box maxWidth="1280px" m="auto">
         <Banner 
           purpose="RENT A HOME"
           title1="Rental Homes for"
